@@ -338,8 +338,10 @@ section{padding:36px 0}
 .codes b{font-weight:500;font-size:1.0625rem;margin-right:6px}
 
 footer{padding:24px 0 56px;color:var(--mute);font-size:.9375rem}
-footer .wrap{border-top:2px solid var(--ink);padding-top:18px}
+footer .fine{border-top:2px solid var(--ink);padding-top:18px}
 footer p+p{margin-top:4px}
+.lab em{margin-left:.35em}
+@media (min-width:1000px){.lab em{margin-left:0}}
 
 @media (min-width:720px){
   .wrap{padding:0 32px}
@@ -367,7 +369,8 @@ footer p+p{margin-top:4px}
   .hero{padding:48px 0 64px}
   .hero .wrap{grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
   .panel{padding:26px 26px 22px}
-  .ladder a{grid-template-columns:190px 1fr 110px;grid-template-areas:"lab bar price";align-items:center}
+  .ladder a{grid-template-columns:225px 1fr 104px;grid-template-areas:"lab bar price";align-items:center;gap:4px 16px}
+  .lab em{display:block}
   .panel{grid-column:2}
 }
 @media (max-width:440px){
@@ -593,8 +596,10 @@ footer p+p{margin-top:4px}
 
 <footer>
   <div class="wrap">
-    <p>Fares come from the FareHound email of Oct 8. Prices are per person, roundtrip; totals are for 2 travelers.</p>
-    <p>Fares can change, so check the current price before booking.</p>
+    <div class="fine">
+      <p>Fares come from the FareHound email of Oct 8. Prices are per person, roundtrip; totals are for 2 travelers.</p>
+      <p>Fares can change, so check the current price before booking.</p>
+    </div>
   </div>
 </footer>
 </body>
